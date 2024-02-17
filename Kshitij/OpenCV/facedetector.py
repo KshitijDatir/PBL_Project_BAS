@@ -32,7 +32,7 @@ def rescaleFrame(frame, scale=0.75):
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
                      
 
-capture = cv.VideoCapture("Videos/samplevedio1.mp4")
+capture = cv.VideoCapture(0)
 
 while True:
 
@@ -44,7 +44,7 @@ while True:
 
     haar_cascade = cv.CascadeClassifier("haar_face.xml")
 
-    faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=6)
+    faces_rect =haar_cascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=6)
 
     # print(f"No. Of Faces Are:{len(faces_rect)}")
 
