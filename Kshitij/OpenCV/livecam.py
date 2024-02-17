@@ -7,7 +7,7 @@ livecam = "Faces Trainer\LiveCam"
 
 # Initiate the Webcam
 
-cap = cv.ViceoCapture(0)
+cap = cv.VideoCapture(0)
 
 image_count = 0
 
@@ -19,7 +19,7 @@ while True:
     cv.imshow('Webcam', frame)
 
     # Save the image when 's' Ke Is Pressed
-    key = cv.waitkey(1) & 0xFF
+    key = cv.waitKey(1) & 0xFF
     if key ==ord('s'):
         image_count +=1
         image_path = os.path.join(livecam,f"image_{image_count}.png")
