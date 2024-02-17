@@ -21,10 +21,13 @@ while True:
     # Save the image when 's' Ke Is Pressed
     key = cv.waitKey(1) & 0xFF
     if key ==ord('s'):
-        image_count +=1
-        image_path = os.path.join(livecam,f"image_{image_count}.png")
-        cv.imwrite(image_path, frame)
-        print(f"Image {image_count} Saved At {image_path}")
+
+        for i in range(0, 20):  
+
+            image_count +=1
+            image_path = os.path.join(livecam,f"image_{image_count}.png")
+            cv.imwrite(image_path, frame)
+            print(f"Image {image_count} Saved At {image_path}")
 
     # Break The Loop When "q" Key Is  Pressed
     elif key == ord('q'):
