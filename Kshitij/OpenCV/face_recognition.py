@@ -11,7 +11,7 @@ people = [ 'Adam Sandler' , 'Ben Afflek' , 'Vin Diesel' ]
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread(r'F:\Kshitij Folder\Python\Open CV\Faces Trainer\Ben Afflek\Ben Afflek 2.jpeg')
+img = cv.imread(r'F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Faces Trainer\Ben Afflek\Ben Afflek 2.jpeg')
 
 gray = cv.cvtColor(img , cv.COLOR_BGR2GRAY)
 #cv.imshow('Person' , gray )

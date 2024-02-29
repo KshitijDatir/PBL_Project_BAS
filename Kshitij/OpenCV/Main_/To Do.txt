@@ -1,0 +1,5 @@
+
+
+1) Create A Main Label And Features List (As Its is created each Time Train Program Is Runned And Causes Overwritting Of Data).
+
+2) Create A Directory For Each Photo That Gets Stored In The Drive.

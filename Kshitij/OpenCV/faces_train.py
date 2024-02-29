@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy as np
 
 people = [ 'Adam Sandler' , 'Ben Afflek' , 'Vin Diesel' ]
-DIR = r'F:\Kshitij Folder\Python\Open CV\Faces Trainer'
+DIR = r'F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Faces Trainer'
 
 haar_cascade = cv.CascadeClassifier("haar_face.xml")
 
@@ -42,9 +42,9 @@ face_recognizer = cv.face.LBPHFaceRecognizer_create()
 # Train The Recognizer on Features and Labels List:
 face_recognizer.train(features,labels)
 
-face_recognizer.save('face_trained.yml')
-np.save('features.npy' , features)
-np.save('labels.npy' , labels)
+face_recognizer.save('Main_\face_trained.yml')
+np.save('Main_\features.npy' , features)
+np.save('Main_\labels.npy' , labels)
 
 
 

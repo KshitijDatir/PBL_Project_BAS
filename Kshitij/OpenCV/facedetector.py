@@ -38,7 +38,7 @@ while True:
 
     isTrue, frame = capture.read()
 
-    frame_resized = rescaleFrame(frame, scale=0.3)
+    frame_resized = rescaleFrame(frame, scale=0.8)
     
     gray = cv.cvtColor(frame_resized, cv.COLOR_BGR2GRAY)
 
@@ -50,7 +50,8 @@ while True:
 
     for (x,y,w,h) in faces_rect:
         cv.rectangle(frame_resized, (x,y), (x+w,y+h), (0,255,0),thickness=2)
-        
+        #print(faces_rect)
+        #print(len(faces_rect))
     cv.imshow("Detected Faces",frame_resized)
 
     if cv.waitKey(1) & 0xFF==ord('d'):
