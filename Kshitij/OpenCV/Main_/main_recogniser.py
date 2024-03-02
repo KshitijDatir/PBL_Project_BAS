@@ -1,11 +1,11 @@
 # This Function Use Recogniser Algorithm To Return Labal:
 
-def Recognise(img):
+def Recognise(img,DIR):
         import cv2 as cv
         import numpy as np
         import os
 
-        people = os.listdir(r'F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Faces Trainer')
+        people = os.listdir(DIR)
 
         haar_cascade = cv.CascadeClassifier('haar_face.xml')
 

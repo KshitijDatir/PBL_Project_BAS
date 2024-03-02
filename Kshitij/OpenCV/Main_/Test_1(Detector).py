@@ -5,7 +5,7 @@ import time
 
 import main_rescale
 import main_detector
-import main_train
+import main_train_folder
 import main_recogniser
 
 people = []  #Needs To be Replaced
@@ -67,4 +67,4 @@ if detect() == 1:
     None    
 
 
-main_train.train(DIR)
+main_train_folder.train(DIR)

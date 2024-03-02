@@ -1,7 +1,7 @@
-# This  Function Updates YML File:    
-#Starts From Label Zero:
+    
+    
+def main_train(DIR,list,person):
 
-def train(DIR):
 
     import os
     import cv2 as cv
@@ -9,13 +9,13 @@ def train(DIR):
 
     haar_cascade = cv.CascadeClassifier("haar_face.xml")
     
-    people = os.listdir(DIR)
+    people = list
 
     features = []
     labels = []
 
     def create_train():
-        for person in people:
+        
            path = os.path.join(DIR , person)
            label = people.index(person)
 
@@ -49,6 +49,14 @@ def train(DIR):
 
     np.save(r'Main_\Main_features.npy' , features)
     np.save(r'Main_\Main_labels.npy' , labels)
+
+
+
+
+
+
+
+main_train()
 
 
 
