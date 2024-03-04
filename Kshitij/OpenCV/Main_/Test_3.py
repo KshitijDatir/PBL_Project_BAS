@@ -5,8 +5,8 @@ import os
 
 import main_rescale
 import main_detector
-import main_train
-import main_recogniser
+
+
 import main_enroll
 
 video = cv.VideoCapture(0)
@@ -24,6 +24,7 @@ while True:
         
     
     cv.imshow("demo",frame) 
+    cv.destroyAllWindows
     if cv.waitKey(1)== ord('q'):
         break
 
@@ -42,6 +43,6 @@ if enrol_flag == True:
             counter += 1
             
         
-        if cv.waitKey(1)== 27:
+        if cv.waitKey(1)== ord("q"):
             break
     

@@ -19,5 +19,4 @@ def detect(img):
     else:
        return 0   
 
-#img = cv.imread(r'Faces Trainer\Adam Sandler\Adam Sandler 1.jpeg')    
-#print(detect(img))
+

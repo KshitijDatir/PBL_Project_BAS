@@ -17,7 +17,7 @@ def main_train(DIR,list,person):
     def create_train():
         
            path = os.path.join(DIR , person)
-           label = people.index(person)
+           label = people.index(f"{person}\n")
 
            for img in os.listdir(path):
                img_path = os.path.join(path,img)
@@ -56,7 +56,7 @@ def main_train(DIR,list,person):
 
 
 
-main_train()
+
 
 
 
