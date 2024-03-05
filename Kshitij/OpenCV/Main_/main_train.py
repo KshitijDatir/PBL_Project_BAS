@@ -1,15 +1,19 @@
 # This  Function Updates YML File:    
 #Starts From Label Zero:
 
-def train(DIR):
-
+def train_images(list):
+    
+    
+    print(list)
     import os
     import cv2 as cv
     import numpy as np
 
-    haar_cascade = cv.CascadeClassifier("haar_face.xml")
+    DIR = r"F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Main_\Image_DB"
+
+    haar_cascade = cv.CascadeClassifier("F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Main_\haar_face.xml")
     
-    people = os.listdir(DIR)
+    people = list
 
     features = []
     labels = []
@@ -21,7 +25,7 @@ def train(DIR):
 
            for img in os.listdir(path):
                img_path = os.path.join(path,img)
-           
+               print(img_path)
                img_array = cv.imread(img_path)
                gray = cv.cvtColor(img_array, cv.COLOR_BGR2GRAY)
         
@@ -45,10 +49,10 @@ def train(DIR):
     # Train The Recognizer on Features and Labels List:
     face_recognizer.train(features,labels)
 
-    face_recognizer.save(r'Main_\Main_face_trained.yml')
+    face_recognizer.save(r'F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Main_\Main_face_trained.yml')
 
-    np.save(r'Main_\Main_features.npy' , features)
-    np.save(r'Main_\Main_labels.npy' , labels)
+    np.save(r'F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Main_\Main_features.npy' , features)
+    np.save(r'F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Main_\Main_labels.npy' , labels)
 
 
 

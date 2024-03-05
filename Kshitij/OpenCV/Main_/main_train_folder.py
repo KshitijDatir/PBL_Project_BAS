@@ -7,7 +7,7 @@ def main_train(DIR,list,person):
     import cv2 as cv
     import numpy as np
 
-    haar_cascade = cv.CascadeClassifier("haar_face.xml")
+    haar_cascade = cv.CascadeClassifier(r"F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Main_\haar_face.xml")
     
     people = list
 

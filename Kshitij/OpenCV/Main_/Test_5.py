@@ -3,7 +3,7 @@ import os
 
 import main_detector
 import main_enroll
-import main_train_folder as mtf
+import main_train as mt
 
 DIR = r"F:\Kshitij Folder\Python\Open CV\Kshitij\OpenCV\Main_\Image_DB"
 
@@ -36,13 +36,21 @@ def train(name):
                 list=[]
                 for line in People_File:
                     list.append(line)
+                    
+                for i in range(0,len(list)):
+                    
+                    list[i] = list[i].replace("\n","")
+                    
+
             return list
         
         # Main List: ******************************************************************************************************
         list = make_list()
         
 
-        mtf.main_train(DIR2,list,name)
+        # mtf.main_train(DIR2,list,name)
+        mt.train_images(list)
+
         print("Data Trained,Enrollment Successful")
 
 
