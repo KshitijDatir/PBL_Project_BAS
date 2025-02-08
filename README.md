@@ -1,16 +1,16 @@
-#Face Recognition System Using OpenCV
+Face Recognition System Using OpenCV
 
 This project implements a real-time face recognition system using OpenCV. It allows users to detect faces, enroll new individuals, and train a model to recognize them.
 
 🚀 Features
 
-Real-time face detection using OpenCV.
+  Real-time face detection using OpenCV.
 
-Enroll new users by capturing images.
+  Enroll new users by capturing images.
 
-Train a face recognition model with enrolled images.
+  Train a face recognition model with enrolled images.
 
-Live camera feed for continuous detection.
+  Live camera feed for continuous detection.
 
 📂 Project Structure
 
@@ -24,57 +24,57 @@ Live camera feed for continuous detection.
 
 🛠 Requirements
 
-Python 3.x
+  Python 3.x
 
-OpenCV (cv2)
+  OpenCV (cv2)
 
-NumPy
+  NumPy
 
 Install Dependencies
 
-Run the following command:
+  Run the following command:
 
-pip install opencv-python numpy
+  pip install opencv-python numpy
 
 📸 How to Use
 
-1️⃣ Run the Main Script
+  1️⃣ Run the Main Script
 
-python main.py
+  python main.py
 
-2️⃣ Enrollment Mode
+  2️⃣ Enrollment Mode
 
-Press e to enter enrollment mode.
+  Press e to enter enrollment mode.
 
-Enter the user's name when prompted.
+  Enter the user's name when prompted.
 
-Capture images by pressing s.
+  Capture images by pressing s.
 
-Press q to stop capturing and start training.
+  Press q to stop capturing and start training.
 
 3️⃣ Training
 
-The system automatically trains on enrolled images.
+  The system automatically trains on enrolled images.
 
-New users are saved in DB_File/People.
+  New users are saved in DB_File/People.
 
 4️⃣ Face Detection
 
-The live camera feed runs by default.
+  The live camera feed runs by default.
 
-The system attempts to recognize known faces.
+  The system attempts to recognize known faces.
 
-Press Esc to exit.
+  Press Esc to exit.
 
 🏗 Future Enhancements
 
-Improve accuracy using deep learning (e.g., FaceNet, dlib).
+  Improve accuracy using deep learning (e.g., FaceNet, dlib).
 
-Implement database storage instead of text files.
+  Implement database storage instead of text files.
 
-Add GUI for easier interaction.
+  Add GUI for easier interaction.
 
 📜 License
 
-This project is for educational purposes and is open-source. Feel free to modify and improve it!
+  This project is for educational purposes and is open-source. Feel free to modify and improve it!
 
